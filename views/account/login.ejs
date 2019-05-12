@@ -1,0 +1,61 @@
+<!-- Login page view  -->
+<div class="custom-container" ng-controller="UserLoginCtrl" class="col-md-6" >
+  <div class="page-header" style="text-align:center; color:whitesmoke;">
+    <h3>Sign In</h3>
+  </div>
+
+  <!-- Feedback meesages displayed on basis of login functions -->
+  <%if(messages.failure){%>
+    <div class="alert alert-danger">
+      <%=messages.failure%>
+    </div>
+    <%}%>
+      <%if(messages.success){%>
+        <div class="alert alert-success">
+          <%=messages.success%>
+        </div>
+        <%}%>
+          <%if(messages.errors){%>
+            <% for (var x=0;x<messages.errors.length;x++) {%>
+              <div class="alert alert-danger">
+                <%= messages.errors[x].msg %>
+              </div>
+              <%}%>
+                <%}%>
+               <div style="margin-left:40% ; color:whitesmoke">
+                  <form novalidate method="POST" action="/login" name="loginForm">
+
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="email" class="control-label">Email</label>
+                          <input type="email" name="email" id="email" placeholder="Email" autofocus class="form-control" required ng-model="login"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <label for="password" class="control-label">Password</label>
+                          <input type="password" name="password" id="password" placeholder="Password" class="form-control" required ng-model="psw"
+                          />
+                        </div>
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-primary" ng-disabled="loginForm.$invalid">
+                            <i class="fa fa-user"></i>Login
+                          </button>
+
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </form>
+                  
+                  
+                  <form action='forgot' method="POST">
+                    <button type="submit" name="submit" class="btn btn-danger">Forgot your password?</button>
+                  </form>
+                  <div style="color:white">
+                    <h5>
+                  <%= title %>
+                    </h5>
+                  </div>
+                </div>
+</div>

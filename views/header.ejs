@@ -1,0 +1,78 @@
+    <nav class="navbar navbar-inverse navbar-fixed-top ">
+        <div class="container">
+            
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+             
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+            aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <!-- condition to check if user is logged or not -->
+                <%if(!user){%>
+                  <!-- if not logged-in -->
+              <li>
+                  <a href="/">
+                    <!-- redirect o homepage on clicking logo -->
+                    <img src="/images/homeicon1.png" alt="l9ogo" width="20px" height="20px">
+                  </a>
+              </li>
+                <li>
+                <!-- redirect o homepage on clicking welcome -->
+                  <a  href="/"> Welcome</a>
+                </li>
+                <li>
+                  <!-- redirect o contact on clicking on contact tab -->
+                  <a  href="/contact"> Contact</a>
+                </li>
+                <!-- use the about page  -->
+                <% include about.ejs %>
+                <%} else{%>
+                  <!-- if logged-in -->
+                  <li>
+                      <a  href="/">
+                        <img src="/images/homeicon1.png" alt="logo" width="20px" height="20px">
+                      </a>
+                  </li>
+                <!-- redirect to estimates page on clicking estimates tab -->
+                  <li>
+                      <a  href="/coating">Estimates</a>
+                    </li>
+
+                    <%}%>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <!-- condition to check if logged in or not  -->
+                <%if(!user){%>
+
+                  <li>
+                    <a  href="/login">Login</a>
+                  </li>
+               
+                  <%} else{%>
+
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= user.profile.name %> <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/logout">Logout</a></li>
+                      </ul>
+                    </li>
+        
+                <%}%> 
+                
+                    
+           
+
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>

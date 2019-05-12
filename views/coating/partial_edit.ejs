@@ -1,0 +1,460 @@
+<!-- Page to display the form for creating an estimate -->
+<div class=row>
+    <div class="col col-xs-12">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" value="<%= coating.name %>" required>
+        </div>
+        <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" class="form-control" id="location" name="location" value="<%= coating.location %>">
+        </div>
+        <div class="form-group">
+            <label for="squareFeet">Square Feet</label>
+            <input onchange="onEstimateChange()" type="number" min="0" class="form-control" id="squareFeet" name="squareFeet" value="<%= coating.squareFeet %>"
+                required>
+        </div>
+    </div>
+</div>
+<hr>
+
+<!-- materials cost -->
+<p></p>
+<div id="materialList">
+        <h4>
+                Materials Cost Estimation
+              </h4>
+  <% const origmatcount = coating.materials.length; numUnits=0; var materialCost=0; %>
+    <span id="materialCount">
+      <%=origmatcount%>
+    </span> Material Entries
+    <div id="dynamicMaterialInput">
+    <% for (var imat=1; imat <= origmatcount; imat++) {  material = coating.materials[imat-1];  %>
+      <div id="oneMaterial">
+        <p></p>
+        <div class=row>
+          <div class="col col-xs-4">
+            <div class="form-group">
+              <label for="product" name="productLabel">Material </label>
+              <input type="text" class="form-control" id="product<%=imat%>" name="product" value="<%= material.product %>">
+            </div>
+          </div>
+          <div class="col col-xs-4">
+            <div class="form-group">
+              <label for="unitcost" name="unitcostLabel">Dollar(s) Per Unit</label>
+              <input onchange="onEstimateChange()" type="number" min="0" class="form-control" id="unitcost<%=imat%>" name="unitcost" step="1" value="<%= material.unitcost %>"
+                min=0 max=500000>
+            </div>
+          </div>
+          <div class="col col-xs-4">
+            <div class="form-group">
+              <label for="coverageSquareFeetPerUnit" name="coverageLabel">Coverage Area in Sqft</label>
+              <input onchange="onEstimateChange()" type="number" min="0" class="form-control" id="coverageSquareFeetPerUnit<%=imat%>" step="1"
+                value="<%= material.coverageSquareFeetPerUnit %>" name="coverageSquareFeetPerUnit" min=1 max=50000>
+            </div>
+          </div>
+        </div>
+       Cost for this material =
+      
+        <span id="oneMaterialCost<%=imat%>"></span> for
+        <span id="numUnits<%=imat %>"></span> Unit(s) required.
+  
+       
+        
+        <p></p>
+      </div>
+      <%  }  %>
+</div>
+<div class="form-group">
+    <input type="button" value="+" onClick="addInput('dynamicMaterialInput');">
+  </div>
+  
+<br/>
+<h4>
+  Total Material(s) Cost =
+  <span id="materialCost"></span>
+  
+    
+  
+</h4>
+<hr>
+<!-- Labor  Cost-->
+<h4>
+        Labor Cost Estimation
+      </h4>
+<div class=row>
+    <div class="col col-xs-12">
+        <div class="form-group">
+            <label for="numberOfPeople">Number of People</label>
+            <input onchange="onLaborCost()" type="number" min="0" class="form-control" id="numberOfPeople" name="numberOfPeople" value="<%= coating.numberOfPeople %>"
+                required>
+        </div>
+        <div class="form-group">
+            <label for="numberOfDays">Number of Day(s)</label>
+            <input onchange="onLaborCost()" type="number" min="0" class="form-control" id="numberOfDays" name="numberOfDays" value="<%= coating.numberOfDays%>">
+        </div>
+        <div class="form-group">
+            <label for="hoursWorkedPerDay">Hours Worked Per Day</label>
+            <input onchange="onLaborCost()" type="number" min="0" class="form-control" id="hoursWorkedPerDay" name="hoursWorkedPerDay" value="<%= coating.hoursWorkedPerDay %>"
+                required>
+        </div>
+        <div class="form-group">
+            <label for="laborDollarsPerHour">Labor Dollar(s) Per Hour</label>
+            <input onchange="onLaborCost()" type="number" min="0" class="form-control" id="laborDollarsPerHour" name="laborDollarsPerHour" value="<%= coating.laborDollarsPerHour %>"
+                required>
+        </div>
+    </div>
+</div>
+<h4>
+    Total Labor Cost =
+    <span id="laborCost"></span>
+</h4>
+<hr>
+
+<!-- Hotel Cost -->
+<h4>
+        Accommodation Cost Estimation
+      </h4>
+<div class=row>
+    <div class="col col-xs-12">
+        <div class="form-group">
+            <label for="numberHotelRooms">Number of Hotel Room(s)</label>
+            <input onchange="onHotelCost()" type="number" min="0" class="form-control" id="numberHotelRooms" name="numberHotelRooms" value="<%= coating.numberHotelRooms%>">
+        </div>
+        <div class="form-group">
+            <label for="numberHotelNights">Number of Hotel Night(s)</label>
+            <input onchange="onHotelCost()" type="number" min="0" class="form-control" id="numberHotelNights" name="numberHotelNights" value="<%= coating.numberHotelNights%>"
+                required>
+        </div>
+        <div class="form-group">
+            <label for="hotelDollarsPerNight">Dollar(s) per Night</label>
+            <input onchange="onHotelCost()" type="number" min="0" class="form-control" id="hotelDollarsPerNight" name="hotelDollarsPerNight"
+                value="<%= coating.hotelDollarsPerNight %>" required>
+        </div>
+    </div>
+</div>
+<br/>
+<h4>
+    Total Accommodation Cost =
+    <span id="hotelCost"></span>
+</h4>
+<hr>
+
+<!-- Food Cost  -->
+<h4>
+        Food Cost Estimation
+      </h4>
+<div class=row>
+    <div class="col col-xs-12">
+        <div class="form-group">
+            <label for="numberOfPeopleff">Number of People</label>
+            <input onchange="onFoodCost()" type="number" min="0" class="form-control" id="numberOfPeopleff" name="numberOfPeopleff" value="<%= coating.numberOfPeople %>"
+                required>
+        </div>
+        <div class="form-group">
+            <label for="numberOfDaysff">Number of Day(s)</label>
+            <input onchange="onFoodCost()" type="number" min="0" class="form-control" id="numberOfDaysff" name="numberOfDaysff" value="<%= coating.numberOfDays%>">
+        </div>
+        <div class="form-group">
+            <label for="foodDollarsPerDay">Dollar(s) spend on Food per Day</label>
+            <input onchange="onFoodCost()" type="number" min="0" class="form-control" id="foodDollarsPerDay" name="foodDollarsPerDay" value="<%= coating.foodDollarsPerDay %>"
+                required>
+        </div>
+    </div>
+</div>
+<br/>
+<h4>
+    Total Food Cost =
+    <span id="foodCost"></span>
+</h4>
+<hr>
+<!-- Vehicle Cost  -->
+<h4>
+        Transportation Cost Estimation
+      </h4>
+<div class=row>
+    <div class="col col-xs-12">
+        <div class="form-group">
+            <label for="numberOfVehicles">Number of Vehicle(s)</label>
+            <input onchange="onVehicleCost()" type="number" min="0" class="form-control" id="numberOfVehicles" name="numberOfVehicles" value="<%= coating.numberOfVehicles %>"
+                required>
+        </div>
+        <div class="form-group">
+            <label for="milesPerVehicle">Mile(s) Per Vehicle(s)</label>
+            <input onchange="onVehicleCost()" type="number" min="0" class="form-control" id="milesPerVehicle" name="milesPerVehicle" value="<%= coating.milesPerVehicle %>"
+                required>
+        </div>
+        <div class="form-group">
+            <label for="dollarsPerMile">Dollar(s) Per Mile</label>
+            <input onchange="onVehicleCost()" type="number" min="0" class="form-control" id="dollarsPerMile" name="dollarsPerMile" value="<%= coating.dollarsPerMile %>"
+                required>
+        </div>
+        
+    </div>
+</div>
+<br/>
+<h4>
+    Total Transportation Cost =
+    <span id="vehicleCost"></span>
+</h4>
+<hr>
+
+<!-- Miscellaneous Cost-->
+<h4>
+        Miscellaneous Cost Estimation
+      </h4>
+<p></p>
+<div id="miscellaneousList">
+    <% const origMiscellaneousCount = coating.miscellaneous.length;  %>
+        <span id="miscellaneousCount">
+            <%=origMiscellaneousCount%>
+        </span> Miscellaneous Entries
+       <div id= "dynamicMiscellaneousInput">
+        <% for (var iEntry=1; iEntry <= origMiscellaneousCount; iEntry++) {  misscell = coating.miscellaneous[iEntry-1];  %>
+            <div id="oneEntry">
+                <p></p>
+                <div class=row>
+                    <div class="col col-xs-4">
+                        <div class="form-group">
+                            <label for="miscellaneousName" name="miscellaneousNameLabel">Miscellaneous Name </label>
+                            <input type="text" class="form-control" id="miscellaneousName<%=iEntry%>" name="miscellaneousName" value="<%= misscell.misc%>">
+                        </div>
+                    </div>
+                    <div class="col col-xs-4">
+                        <div class="form-group">
+                            <label for="Cost" name="CostLabel">Cost</label>
+                            <input onchange="onMissChange()" type="number" min="0" class="form-control" id="Cost<%=iEntry%>" name="Cost" value="<%= misscell.cost %>"
+                                required>
+                        </div>
+                    </div>
+                </div>
+                <p></p>
+            </div>
+            <%  }  %>
+</div>
+</div>
+<div class="form-group">
+    <input type="button" value="+" onClick="addInput('dynamicMiscellaneousInput');">
+  </div>
+<br/>
+<h4>
+    Total Miscellaneous Cost =
+    <span id="miscCost"></span>
+</h4>
+<hr>
+
+<!--Total cost-->
+<h4>
+    Total Estimate Cost =
+    <span id="estimateCost"></span>
+</h4>
+
+<h4>Cost per square Feet=
+    <span id="squareFeetCost"></span>
+</h4>
+
+<!-- Multiplier-->
+<div class="form-group">
+    <label for="multiplier">Multiplier</label>
+    <input onchange="onVehicleCost()" type="number" min="0" class="form-control" id="multiplier" name="multiplier" value="<%= coating.multiplier %>"
+        placeholder="0.40" step="0.05" min="1.0" max="2" required>
+</div>
+
+Total Price with multiplier 
+<h4>
+    Bid Price=
+    <span id="bidPrice"></span>
+</h4>
+<h4>Bid per square feet=
+    <span id="bidPricesqrt"></span>
+</h4>
+
+
+
+
+
+
+
+<!-- PUT CLIENT SIDE CODE HERE -->
+<script>
+    // Method to calcualte the transport or vehicle cost
+    function onVehicleCost() {
+        var totalVehicle = 0;
+        const numOfVehicles = parseInt($("input[name=numberOfVehicles]").val());
+        const milPerVehicle = parseFloat($("input[name=milesPerVehicle]").val());
+        const dolPerMile = parseFloat($("input[name=dollarsPerMile]").val());
+        const multiplier =  parseFloat($("input[name=multiplier]").val());
+        totalVehicle = numOfVehicles * milPerVehicle * dolPerMile;
+        $("#vehicleCost").html(totalVehicle.toCurrencyInt());
+        totalCost();
+    }
+    // Method to calcualte the food cost
+    function onFoodCost() {
+        var totalFood = 0;
+        const numOfPeople = parseInt($("input[name=numberOfPeopleff]").val());
+        const numOfDays = parseInt($("input[name=numberOfDaysff]").val());
+        const foodDollarPerDay = parseFloat($("input[name=foodDollarsPerDay]").val());
+        totalFood = numOfPeople * numOfDays * foodDollarPerDay;
+        $("#foodCost").html(totalFood.toCurrencyInt());
+        totalCost();
+    }
+    // Method to calcualte the hotel cost
+    function onHotelCost() {
+        var totalHotel = 0;
+        const numOfHotelRoom = parseInt($("input[name=numberHotelRooms]").val());
+        const numOfHotelNight = parseInt($("input[name=numberHotelNights]").val());
+        const dollarPerNight = parseFloat($("input[name=hotelDollarsPerNight]").val());
+        totalHotel = numOfHotelRoom * numOfHotelNight * dollarPerNight;
+        $("#hotelCost").html(totalHotel.toCurrencyInt());
+        totalCost();
+    }
+
+// Method to calcualte the material cost dynamically on chnge of inputs
+    function onEstimateChange() {
+        const newsqft = parseFloat($("input[name=squareFeet]").val());
+        let numMaterials = parseInt($("#materialCount").html());
+        let matCost = 0;
+        for (var i = 1; i <= numMaterials; i++) {
+          let cov = document.getElementsByName("coverageSquareFeetPerUnit")[i - 1];
+          let uc = document.getElementsByName("unitcost")[i - 1];
+          console.log(cov.value)
+          if (cov.value && uc.value && typeof (parseInt(cov.value)) === "number" && typeof (parseInt(uc.value)) === "number") {
+            const qty = Math.ceil(newsqft / parseInt(cov.value));
+            
+            const cost = qty * uc.value;
+            $("#numUnits" + i).html(qty);
+            $("#oneMaterialCost" + i).html(cost.toCurrencyInt());
+            if (typeof (parseInt(cost)) === "number") {
+              matCost += cost;
+            }
+          }
+          else {
+            $("#numUnits" + i).html("0");
+            const zero = 0;
+            $("#oneMaterialCost" + i).html(zero.toCurrencyInt());
+          }
+        }
+        $("#materialCost").html(matCost.toCurrencyInt());
+        totalCost();
+    }
+
+// Method to calcualte the miscellaneous cost
+    function onMissChange() {
+       let numMisc = parseInt($("#miscellaneousCount").html());
+                  let miscCost = 0;
+                  for (var i = 1; i <= numMisc; i++) {
+                    let temp = document.getElementsByName("Cost")[i - 1];
+                    if (temp.value && typeof (parseInt(temp.value)) === "number") {
+                      miscCost += parseInt(temp.value);
+                    }
+                  }
+                  $("#miscCost").html(miscCost.toCurrencyInt());
+                  //miscCost.toCurrencyInt()
+                  totalCost();
+                }
+
+// Method to calcualte the labour cost
+    function onLaborCost() {
+        var totalLabor = 0;
+        const numOfPeople = parseInt($("input[name=numberOfPeople]").val());
+        const numOfDays = parseInt($("input[name=numberOfDays]").val());
+        const hourWork = parseInt($("input[name=hoursWorkedPerDay]").val());
+        const dolPerHour = parseFloat($("input[name=laborDollarsPerHour]").val());
+        totalLabor = numOfPeople * numOfDays * hourWork * dolPerHour;
+        $("#laborCost").html(totalLabor.toCurrencyInt());
+        totalCost();
+    }
+
+
+
+    // window.onload = a function that will call all update functions to display calculated values
+    window.onload = function () {
+        onEstimateChange();
+        onLaborCost();
+        onMissChange();
+        onVehicleCost();
+        onFoodCost();
+        onHotelCost();
+    }
+
+    //// Method to calcualte Total Estimate Cost
+    function totalCost() {
+        const newsqft = parseFloat($("input[name=squareFeet]").val());
+        const materialCost = parseInt($("#materialCost").html().replace("$", "").replace(",", ""));
+        const laborCost = parseInt($("#laborCost").html().replace("$", "").replace(",", ""));
+        const hotelCost = parseInt($("#hotelCost").html().replace("$", "").replace(",", ""));
+        const foodCost = parseInt($("#foodCost").html().replace("$", "").replace(",", ""));
+        const vehicleCost = parseInt($("#vehicleCost").html().replace("$", "").replace(",", ""));
+        const miscCost = parseInt($("#miscCost").html().replace("$", "").replace(",", ""));
+        const newCost = materialCost + laborCost + hotelCost + foodCost + vehicleCost + miscCost;
+        const newCostpersqft = Math.round(newCost / newsqft * 100.0) / 100.0;
+        $("#estimateCost").html(newCost.toCurrencyInt());
+        $("#squareFeetCost").html(newCostpersqft.toCurrency());
+        const newmult =  parseFloat($("input[name=multiplier]").val());
+        const newprice = newCost * newmult;
+        const newpricepersqft = Math.round(newprice / newsqft * 100.0) / 100.0;
+        $("#bidPrice").html(newprice.toCurrencyInt());
+        $("#bidPricesqrt").html(newpricepersqft.toCurrency());
+      }
+    function toCurrency(amount) {
+        return "$" + amount.toFixed(2);
+    };
+
+    // function toCurrencyInt(amount) 
+    function toCurrencyInt(amount) {
+        return "$" + amount.toFixed(0);
+    };
+
+    // Add  .toCurrency() method to all     
+    Number.prototype.toCurrency = function () {
+        return toCurrency(this);
+    };
+
+    // Add  .toCurrencyInt() method to all Numbers
+    Number.prototype.toCurrencyInt = function () {
+        return toCurrencyInt(this);
+    };
+    // Add extra materials and miscellaneous items dynamically
+    function addInput(divName) {
+    var count = 1; var num = 0; var mateormisc = "product";
+    if (divName == "dynamicMiscellaneousInput") {
+        mateormisc = "miscellaneousName";
+    }
+    while (count > 0) {
+        if ($("#" + mateormisc + count).length > 0) {
+            count++;
+            num = count;
+        }
+        else { count = 0; }
+    }
+    var newdiv = document.createElement('div');
+    if (divName == "dynamicMiscellaneousInput") {
+        // newdiv.innerHTML = "<div class=row><div class='col col-xs-4'><div class='form-group'><input type='text' class='form-control' id='miscellaneousName" + num + "' name='miscName' value='Miscellaneous entry " + num + "'></div></div><div class='col col-xs-4'><div class='form-group'><input type='number' onkeyup='onMiscChange()' class='form-control' id='Cost" + num + "' name='miscCost' value='0'></div></div></div>";
+        newdiv.innerHTML = "<div class=row>"+
+        "<div class='col col-xs-4'><div class='form-group'><label for='miscellaneousName' name='miscellaneousNameLabel'>Miscellaneous Name </label><input type='text' class='form-control' id='miscellaneousName<%=iEntry%>' name='miscellaneousName' value='<%= misscell.misc%>'></div></div>"+
+        "<div class='col col-xs-4'><div class='form-group'><label for='Cost' name='CostLabel'>Cost</label><input onchange='onMissChange()' type='number' min='0' class='form-control' id='Cost<%=iEntry%>' name='Cost' value='<%= misscell.cost %>'></div></div></div>";
+        $("#miscellaneousCount").html(parseInt($("#miscellaneousCount").html()) + 1);
+    } else if (divName == 'dynamicMaterialInput') {
+        // newdiv.innerHTML = "<div class=row><div class='col col-xs-4'><div class='form-group'><input type='text' class='form-control' id='product" + num + "' name='product' value='New Material " + num + "'></div></div><div class='col col-xs-4'><div class='form-group'><input onkeyup='onEstimateChange()' type='number' class='form-control' id='unitCost" + num + "' name='unitCost' value=65></div></div><div class='col col-xs-4'><div class='form-group'> <input onkeyup='onEstimateChange()' type='number' class='form-control' id='coverageSquareFeetPerUnitt" + num + "' name='coverageSquareFeetPerUnit' value=300></div></div></div>" +
+        //      "<div> <h4> <span id='numUnits" + num + "'> 0 units = $ 0</span></h4></div>";
+
+        newdiv.innerHTML =  "<div class=row>"+
+        "<div class='col col-xs-4'><div class='form-group'><label for='product' name='productLabel'>Material </label><input type='text' class='form-control' id='product<%=imat%>' name='product' value='<%=material.product%>'> </div></div>" +
+        "<div class='col col-xs-4'><div class='form-group'><label for=unitcost' name='unitcostLabel'>Dollar(s) Per Unit</label><input onchange='onEstimateChange()' type='number' min='0' class='form-control' id='unitcost<%=imat%>' name='unitcost' step='1' value='<%= material.unitcost %>'></div></div>"+
+        "<div class='col col-xs-4'><div class='form-group'><label for='coverageSquareFeetPerUnit' name='coverageLabel'>Coverage Area in Sqft</label><input onchange='onEstimateChange()' type='number' min='0' class='form-control' id='coverageSquareFeetPerUnit<%=imat%>' name='coverageSquareFeetPerUnit' step='1' value='<%= material.coverageSquareFeetPerUnit %>'></div></div></div>"+
+        "Cost for this material = <span id='oneMaterialCost<%=imat%>'></span><p></p>";
+        
+        $("#materialCount").html(parseInt($("#materialCount").html()) + 1);
+    }
+    document.getElementById(divName).appendChild(newdiv);
+}
+    // prevent submission when hitting enter key - optional, but user-friendly 
+    document.forms[0].onkeypress = function (e) {
+        var key = e.charCode || e.keyCode || 0;
+        if (key == 13) {
+            e.preventDefault();
+        }
+    }
+
+// END CLIENT SIDE CODE  (close the script tag)
+</script>
