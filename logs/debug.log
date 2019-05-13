@@ -30000,3 +30000,52 @@ SyntaxError: Unexpected identifier
 2019-05-03T03:17:46.712Z - debug: GET /images/favicon-96x96.png
 2019-05-03T03:17:46.713Z - debug: GET /images/favicon-32x32.png
 2019-05-03T03:17:46.714Z - debug: GET /images/favicon-16x16.png
+2019-05-13T20:19:12.989Z - info: Environment isProduction =  false
+2019-05-13T20:19:13.003Z - error: uncaughtException: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string. date=Mon May 13 2019 16:19:12 GMT-0400 (Eastern Daylight Time), pid=25873, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.13.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=56598528, heapTotal=38076416, heapUsed=25358496, external=19332456, loadavg=[4.84423828125, 3.2080078125, 2.0947265625], uptime=1309185
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at new MongooseError (/Users/santosh/Desktop/CoatingsEstimator/node_modules/mongoose/lib/error/mongooseError.js:14:11)
+    at NativeConnection.Connection.openUri (/Users/santosh/Desktop/CoatingsEstimator/node_modules/mongoose/lib/connection.js:465:11)
+    at Mongoose.connect (/Users/santosh/Desktop/CoatingsEstimator/node_modules/mongoose/lib/index.js:289:15)
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:47:24)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+    at startup (internal/bootstrap/node.js:285:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)
+2019-05-13T20:20:50.882Z - info: Environment isProduction =  true
+2019-05-13T20:20:51.062Z - debug: START routing
+2019-05-13T20:20:51.073Z - debug: END routing
+2019-05-13T20:20:51.140Z - info: Starting controllers/user.js.
+2019-05-13T20:20:51.141Z - debug: START user routing
+2019-05-13T20:20:51.142Z - debug: END user routing
+2019-05-13T20:20:51.142Z - info: Loaded routing.
+2019-05-13T20:20:51.602Z - info: START seeder.
+2019-05-13T20:20:51.607Z - debug: Registering cgeadmin@mail.com
+2019-05-13T20:20:51.614Z - debug: 10 estimates seeded
+2019-05-13T20:20:51.614Z - debug: 1 users registered
+2019-05-13T20:20:51.882Z - debug: User already exists:  cgeadmin@mail.com
+2019-05-13T20:21:01.846Z - debug: GET /
+2019-05-13T20:21:01.853Z - debug: Request to /
+2019-05-13T20:21:01.897Z - debug: GET /css/main.css
+2019-05-13T20:21:01.898Z - debug: GET /css/404.css
+2019-05-13T20:21:01.899Z - debug: GET /images/homeicon1.png
+2019-05-13T20:21:01.899Z - debug: GET /images/logo.jpg
+2019-05-13T20:21:02.222Z - debug: GET /images/android-icon-192x192.png
+2019-05-13T20:21:02.228Z - debug: GET /images/favicon-96x96.png
+2019-05-13T20:21:02.229Z - debug: GET /images/favicon-32x32.png
+2019-05-13T20:21:02.232Z - debug: GET /images/favicon-16x16.png
+2019-05-13T20:21:15.314Z - info: Environment isProduction =  true
+2019-05-13T20:21:15.512Z - debug: START routing
+2019-05-13T20:21:15.528Z - debug: END routing
+2019-05-13T20:21:15.583Z - info: Starting controllers/user.js.
+2019-05-13T20:21:15.583Z - debug: START user routing
+2019-05-13T20:21:15.584Z - debug: END user routing
+2019-05-13T20:21:15.584Z - info: Loaded routing.
+2019-05-13T20:21:15.964Z - info: START seeder.
+2019-05-13T20:21:15.971Z - debug: Registering cgeadmin@mail.com
+2019-05-13T20:21:15.980Z - debug: 10 estimates seeded
+2019-05-13T20:21:15.980Z - debug: 1 users registered
+2019-05-13T20:21:16.322Z - debug: User already exists:  cgeadmin@mail.com
