@@ -27,6 +27,11 @@ Clone this repo to your local machine. If Windows,
 - Right-click on parent folder and select:
 - git clone https://github.com/santoshsekhar/CoatingsEstimator.git
 
+# Login credentials
+
+username: cgeadmin@mail.com
+passcode: admin123
+
 # Live updates
 
 Open a command window in your new project folder. Install nodemon globally to enable live updates.
