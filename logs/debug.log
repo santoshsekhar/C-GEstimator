@@ -30049,3 +30049,548 @@ MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefin
 2019-05-13T20:21:15.980Z - debug: 10 estimates seeded
 2019-05-13T20:21:15.980Z - debug: 1 users registered
 2019-05-13T20:21:16.322Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:43:13.710Z - info: Environment isProduction =  true
+2019-07-08T17:43:13.737Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:43:13 GMT-0400 (Eastern Daylight Time), pid=72985, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=56930304, heapTotal=39608320, heapUsed=22788304, external=19585146, loadavg=[4.71484375, 2.5869140625, 1.94580078125], uptime=3540704
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:43:14.102Z - info: Starting controllers/user.js.
+2019-07-08T17:43:14.102Z - info: START seeder.
+2019-07-08T17:43:14.108Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:43:14.114Z - debug: 10 estimates seeded
+2019-07-08T17:43:14.114Z - debug: 1 users registered
+2019-07-08T17:43:14.303Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:44:25.105Z - info: Environment isProduction =  true
+2019-07-08T17:44:25.298Z - debug: START routing
+2019-07-08T17:44:25.313Z - debug: END routing
+2019-07-08T17:44:25.371Z - info: Starting controllers/user.js.
+2019-07-08T17:44:25.371Z - debug: START user routing
+2019-07-08T17:44:25.372Z - debug: END user routing
+2019-07-08T17:44:25.372Z - info: Loaded routing.
+2019-07-08T17:44:25.639Z - info: START seeder.
+2019-07-08T17:44:25.645Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:44:25.652Z - debug: 10 estimates seeded
+2019-07-08T17:44:25.652Z - debug: 1 users registered
+2019-07-08T17:44:26.057Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:44:28.270Z - debug: GET /
+2019-07-08T17:44:28.276Z - debug: Request to /
+2019-07-08T17:44:28.312Z - debug: GET /css/main.css
+2019-07-08T17:44:28.315Z - debug: GET /css/404.css
+2019-07-08T17:44:28.325Z - debug: GET /images/homeicon1.png
+2019-07-08T17:44:28.325Z - debug: GET /images/logo.jpg
+2019-07-08T17:44:28.498Z - debug: GET /images/favicon-96x96.png
+2019-07-08T17:44:28.509Z - debug: GET /images/android-icon-192x192.png
+2019-07-08T17:44:28.510Z - debug: GET /images/favicon-32x32.png
+2019-07-08T17:44:28.511Z - debug: GET /images/favicon-16x16.png
+2019-07-08T17:44:29.588Z - debug: GET /login
+2019-07-08T17:44:31.818Z - debug: POST /login
+2019-07-08T17:44:31.910Z - debug: GET /favicon.ico
+2019-07-08T17:44:43.506Z - info: Environment isProduction =  true
+2019-07-08T17:44:43.527Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:44:43 GMT-0400 (Eastern Daylight Time), pid=73065, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=56786944, heapTotal=39084032, heapUsed=22362384, external=19370829, loadavg=[4.80517578125, 3.26318359375, 2.2724609375], uptime=3540794
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:44:43.946Z - info: Starting controllers/user.js.
+2019-07-08T17:44:43.946Z - info: START seeder.
+2019-07-08T17:44:43.953Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:44:43.959Z - debug: 10 estimates seeded
+2019-07-08T17:44:43.959Z - debug: 1 users registered
+2019-07-08T17:44:44.147Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:45:18.261Z - info: Environment isProduction =  true
+2019-07-08T17:45:18.290Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:45:18 GMT-0400 (Eastern Daylight Time), pid=73096, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=57319424, heapTotal=39608320, heapUsed=22439464, external=19370829, loadavg=[4.7060546875, 3.380859375, 2.3486328125], uptime=3540829
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:45:18.563Z - info: Starting controllers/user.js.
+2019-07-08T17:45:18.563Z - info: START seeder.
+2019-07-08T17:45:18.570Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:45:18.575Z - debug: 10 estimates seeded
+2019-07-08T17:45:18.575Z - debug: 1 users registered
+2019-07-08T17:45:18.768Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:46:07.252Z - info: Environment isProduction =  true
+2019-07-08T17:46:07.275Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:46:07 GMT-0400 (Eastern Daylight Time), pid=73140, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=62898176, heapTotal=39608320, heapUsed=20485752, external=18389333, loadavg=[3.015625, 3.14501953125, 2.31884765625], uptime=3540878
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:46:07.591Z - info: Starting controllers/user.js.
+2019-07-08T17:46:07.591Z - info: START seeder.
+2019-07-08T17:46:07.596Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:46:07.604Z - debug: 10 estimates seeded
+2019-07-08T17:46:07.604Z - debug: 1 users registered
+2019-07-08T17:46:07.798Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:50:19.440Z - info: Environment isProduction =  true
+2019-07-08T17:50:19.460Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:50:19 GMT-0400 (Eastern Daylight Time), pid=73163, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=56512512, heapTotal=39084032, heapUsed=22944232, external=19370829, loadavg=[1.0654296875, 2.005859375, 2.01806640625], uptime=3541130
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:50:19.788Z - info: Starting controllers/user.js.
+2019-07-08T17:50:19.788Z - info: START seeder.
+2019-07-08T17:50:19.794Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:50:19.802Z - debug: 10 estimates seeded
+2019-07-08T17:50:19.802Z - debug: 1 users registered
+2019-07-08T17:50:19.987Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:50:22.775Z - info: Environment isProduction =  true
+2019-07-08T17:50:22.803Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:50:22 GMT-0400 (Eastern Daylight Time), pid=73173, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=56549376, heapTotal=40132608, heapUsed=22679840, external=19370829, loadavg=[1.30029296875, 2.03857421875, 2.029296875], uptime=3541133
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:50:23.086Z - info: Starting controllers/user.js.
+2019-07-08T17:50:23.086Z - info: START seeder.
+2019-07-08T17:50:23.090Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:50:23.096Z - debug: 10 estimates seeded
+2019-07-08T17:50:23.096Z - debug: 1 users registered
+2019-07-08T17:50:23.282Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:50:40.869Z - info: Environment isProduction =  true
+2019-07-08T17:50:40.892Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:50:40 GMT-0400 (Eastern Daylight Time), pid=73196, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=56684544, heapTotal=38559744, heapUsed=22925592, external=19585146, loadavg=[1.392578125, 2.02001953125, 2.02197265625], uptime=3541151
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:50:41.185Z - info: Starting controllers/user.js.
+2019-07-08T17:50:41.185Z - info: START seeder.
+2019-07-08T17:50:41.189Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:50:41.196Z - debug: 10 estimates seeded
+2019-07-08T17:50:41.196Z - debug: 1 users registered
+2019-07-08T17:50:41.382Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:50:55.000Z - info: Environment isProduction =  true
+2019-07-08T17:50:55.032Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:50:55 GMT-0400 (Eastern Daylight Time), pid=73208, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=63901696, heapTotal=40132608, heapUsed=20396104, external=18352943, loadavg=[1.3662109375, 1.9853515625, 2.0087890625], uptime=3541166
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:50:55.276Z - info: Starting controllers/user.js.
+2019-07-08T17:50:55.276Z - info: START seeder.
+2019-07-08T17:50:55.280Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:50:55.286Z - debug: 10 estimates seeded
+2019-07-08T17:50:55.287Z - debug: 1 users registered
+2019-07-08T17:50:55.464Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:50:57.740Z - info: Environment isProduction =  true
+2019-07-08T17:50:57.759Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:50:57 GMT-0400 (Eastern Daylight Time), pid=73218, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=63070208, heapTotal=39608320, heapUsed=20582488, external=18389333, loadavg=[1.3662109375, 1.9853515625, 2.0087890625], uptime=3541168
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:50:58.021Z - info: Starting controllers/user.js.
+2019-07-08T17:50:58.021Z - info: START seeder.
+2019-07-08T17:50:58.026Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:50:58.032Z - debug: 10 estimates seeded
+2019-07-08T17:50:58.032Z - debug: 1 users registered
+2019-07-08T17:50:58.218Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:51:11.448Z - info: Environment isProduction =  true
+2019-07-08T17:51:11.467Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:51:11 GMT-0400 (Eastern Daylight Time), pid=73234, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=56930304, heapTotal=40132608, heapUsed=23017848, external=19370829, loadavg=[1.27783203125, 1.9365234375, 1.98974609375], uptime=3541182
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:51:11.715Z - info: Starting controllers/user.js.
+2019-07-08T17:51:11.715Z - info: START seeder.
+2019-07-08T17:51:11.719Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:51:11.725Z - debug: 10 estimates seeded
+2019-07-08T17:51:11.726Z - debug: 1 users registered
+2019-07-08T17:51:11.916Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:51:20.342Z - info: Environment isProduction =  true
+2019-07-08T17:51:20.364Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:51:20 GMT-0400 (Eastern Daylight Time), pid=73243, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=57151488, heapTotal=40132608, heapUsed=22638680, external=19585146, loadavg=[1.23486328125, 1.9052734375, 1.97802734375], uptime=3541191
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:51:20.606Z - info: Starting controllers/user.js.
+2019-07-08T17:51:20.606Z - info: START seeder.
+2019-07-08T17:51:20.610Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:51:20.616Z - debug: 10 estimates seeded
+2019-07-08T17:51:20.616Z - debug: 1 users registered
+2019-07-08T17:51:20.802Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:51:22.496Z - info: Environment isProduction =  true
+2019-07-08T17:51:22.522Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:51:22 GMT-0400 (Eastern Daylight Time), pid=73253, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=56836096, heapTotal=38559744, heapUsed=22610768, external=19585146, loadavg=[1.23486328125, 1.9052734375, 1.97802734375], uptime=3541193
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:51:22.768Z - info: Starting controllers/user.js.
+2019-07-08T17:51:22.768Z - info: START seeder.
+2019-07-08T17:51:22.776Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:51:22.786Z - debug: 10 estimates seeded
+2019-07-08T17:51:22.786Z - debug: 1 users registered
+2019-07-08T17:51:22.980Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:51:26.570Z - info: Environment isProduction =  true
+2019-07-08T17:51:26.596Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:51:26 GMT-0400 (Eastern Daylight Time), pid=73257, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=62889984, heapTotal=39608320, heapUsed=20543648, external=18389333, loadavg=[1.2158203125, 1.89013671875, 1.97216796875], uptime=3541197
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:51:26.857Z - info: Starting controllers/user.js.
+2019-07-08T17:51:26.857Z - info: START seeder.
+2019-07-08T17:51:26.861Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:51:26.867Z - debug: 10 estimates seeded
+2019-07-08T17:51:26.867Z - debug: 1 users registered
+2019-07-08T17:51:27.062Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:51:28.821Z - info: Environment isProduction =  true
+2019-07-08T17:51:28.848Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:51:28 GMT-0400 (Eastern Daylight Time), pid=73268, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=57233408, heapTotal=39084032, heapUsed=22566912, external=19318098, loadavg=[1.5185546875, 1.94140625, 1.98974609375], uptime=3541199
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:51:29.088Z - info: Starting controllers/user.js.
+2019-07-08T17:51:29.088Z - info: START seeder.
+2019-07-08T17:51:29.095Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:51:29.101Z - debug: 10 estimates seeded
+2019-07-08T17:51:29.101Z - debug: 1 users registered
+2019-07-08T17:51:29.285Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:51:32.535Z - info: Environment isProduction =  true
+2019-07-08T17:51:32.568Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:51:32 GMT-0400 (Eastern Daylight Time), pid=73278, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=63471616, heapTotal=39608320, heapUsed=20256160, external=18314116, loadavg=[1.5185546875, 1.94140625, 1.98974609375], uptime=3541203
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:51:32.850Z - info: Starting controllers/user.js.
+2019-07-08T17:51:32.850Z - info: START seeder.
+2019-07-08T17:51:32.855Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:51:32.862Z - debug: 10 estimates seeded
+2019-07-08T17:51:32.862Z - debug: 1 users registered
+2019-07-08T17:51:33.054Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:51:47.722Z - info: Environment isProduction =  true
+2019-07-08T17:51:47.743Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:51:47 GMT-0400 (Eastern Daylight Time), pid=73294, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=56803328, heapTotal=39608320, heapUsed=22482720, external=19318098, loadavg=[1.6298828125, 1.943359375, 1.98974609375], uptime=3541218
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:51:48.028Z - info: Starting controllers/user.js.
+2019-07-08T17:51:48.029Z - info: START seeder.
+2019-07-08T17:51:48.036Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:51:48.042Z - debug: 10 estimates seeded
+2019-07-08T17:51:48.042Z - debug: 1 users registered
+2019-07-08T17:51:48.231Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:55:35.980Z - info: Environment isProduction =  true
+2019-07-08T17:55:36.000Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:55:35 GMT-0400 (Eastern Daylight Time), pid=73398, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=62578688, heapTotal=39084032, heapUsed=20842840, external=18462921, loadavg=[1.42822265625, 1.61865234375, 1.828125], uptime=3541446
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:55:36.327Z - info: Starting controllers/user.js.
+2019-07-08T17:55:36.327Z - info: START seeder.
+2019-07-08T17:55:36.331Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:55:36.337Z - debug: 10 estimates seeded
+2019-07-08T17:55:36.337Z - debug: 1 users registered
+2019-07-08T17:55:36.537Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:55:53.781Z - info: Environment isProduction =  true
+2019-07-08T17:55:53.800Z - error: uncaughtException: validationResult is not defined date=Mon Jul 08 2019 13:55:53 GMT-0400 (Eastern Daylight Time), pid=73408, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=56578048, heapTotal=39608320, heapUsed=22590280, external=19370829, loadavg=[1.2373046875, 1.56103515625, 1.802734375], uptime=3541464
+ReferenceError: validationResult is not defined
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:16)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:55:54.064Z - info: Starting controllers/user.js.
+2019-07-08T17:55:54.064Z - info: START seeder.
+2019-07-08T17:55:54.071Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:55:54.077Z - debug: 10 estimates seeded
+2019-07-08T17:55:54.077Z - debug: 1 users registered
+2019-07-08T17:55:54.290Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:55:57.664Z - info: Environment isProduction =  true
+2019-07-08T17:55:57.683Z - error: uncaughtException: validationResult is not defined date=Mon Jul 08 2019 13:55:57 GMT-0400 (Eastern Daylight Time), pid=73418, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=57184256, heapTotal=38559744, heapUsed=23173440, external=19585146, loadavg=[1.21826171875, 1.55126953125, 1.7978515625], uptime=3541468
+ReferenceError: validationResult is not defined
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:16)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:55:57.925Z - info: Starting controllers/user.js.
+2019-07-08T17:55:57.925Z - info: START seeder.
+2019-07-08T17:55:57.930Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:55:57.936Z - debug: 10 estimates seeded
+2019-07-08T17:55:57.936Z - debug: 1 users registered
+2019-07-08T17:55:58.119Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:56:24.554Z - info: Environment isProduction =  true
+2019-07-08T17:56:24.576Z - error: uncaughtException: validationResult is not defined date=Mon Jul 08 2019 13:56:24 GMT-0400 (Eastern Daylight Time), pid=73429, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=57188352, heapTotal=40132608, heapUsed=22695136, external=19585146, loadavg=[0.98388671875, 1.47314453125, 1.76171875], uptime=3541495
+ReferenceError: validationResult is not defined
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:16)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:56:24.846Z - info: Starting controllers/user.js.
+2019-07-08T17:56:24.846Z - info: START seeder.
+2019-07-08T17:56:24.850Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:56:24.856Z - debug: 10 estimates seeded
+2019-07-08T17:56:24.856Z - debug: 1 users registered
+2019-07-08T17:56:25.047Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:56:31.660Z - info: Environment isProduction =  true
+2019-07-08T17:56:31.680Z - error: uncaughtException: validationResult is not defined date=Mon Jul 08 2019 13:56:31 GMT-0400 (Eastern Daylight Time), pid=73440, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=57143296, heapTotal=40132608, heapUsed=22738648, external=19585146, loadavg=[1.06494140625, 1.4814453125, 1.7626953125], uptime=3541502
+ReferenceError: validationResult is not defined
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:16)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:56:31.923Z - info: Starting controllers/user.js.
+2019-07-08T17:56:31.923Z - info: START seeder.
+2019-07-08T17:56:31.928Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:56:31.934Z - debug: 10 estimates seeded
+2019-07-08T17:56:31.934Z - debug: 1 users registered
+2019-07-08T17:56:32.127Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:56:42.566Z - info: Environment isProduction =  true
+2019-07-08T17:56:42.595Z - error: uncaughtException: validationResult is not defined date=Mon Jul 08 2019 13:56:42 GMT-0400 (Eastern Daylight Time), pid=73454, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=57507840, heapTotal=39084032, heapUsed=23178240, external=19585146, loadavg=[1.20849609375, 1.498046875, 1.7646484375], uptime=3541513
+ReferenceError: validationResult is not defined
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:16)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:56:42.835Z - info: Starting controllers/user.js.
+2019-07-08T17:56:42.836Z - info: START seeder.
+2019-07-08T17:56:42.840Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:56:42.846Z - debug: 10 estimates seeded
+2019-07-08T17:56:42.846Z - debug: 1 users registered
+2019-07-08T17:56:43.031Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:56:44.362Z - info: Environment isProduction =  true
+2019-07-08T17:56:44.394Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:56:44 GMT-0400 (Eastern Daylight Time), pid=73464, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=56643584, heapTotal=40132608, heapUsed=22520864, external=19370829, loadavg=[1.271484375, 1.50634765625, 1.765625], uptime=3541515
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:110:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:56:44.632Z - info: Starting controllers/user.js.
+2019-07-08T17:56:44.632Z - info: START seeder.
+2019-07-08T17:56:44.639Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:56:44.644Z - debug: 10 estimates seeded
+2019-07-08T17:56:44.644Z - debug: 1 users registered
+2019-07-08T17:56:44.858Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:57:20.240Z - info: Environment isProduction =  true
+2019-07-08T17:57:20.265Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:57:20 GMT-0400 (Eastern Daylight Time), pid=73483, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=56815616, heapTotal=40656896, heapUsed=22335448, external=19370829, loadavg=[1.30322265625, 1.4814453125, 1.74462890625], uptime=3541551
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:110:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:57:20.575Z - info: Starting controllers/user.js.
+2019-07-08T17:57:20.575Z - info: START seeder.
+2019-07-08T17:57:20.584Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:57:20.591Z - debug: 10 estimates seeded
+2019-07-08T17:57:20.592Z - debug: 1 users registered
+2019-07-08T17:57:20.772Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:57:25.935Z - info: Environment isProduction =  true
+2019-07-08T17:57:25.975Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:57:25 GMT-0400 (Eastern Daylight Time), pid=73493, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=63574016, heapTotal=39608320, heapUsed=20005888, external=18287675, loadavg=[1.19873046875, 1.45654296875, 1.734375], uptime=3541556
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:57:26.226Z - info: Starting controllers/user.js.
+2019-07-08T17:57:26.227Z - info: START seeder.
+2019-07-08T17:57:26.232Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:57:26.239Z - debug: 10 estimates seeded
+2019-07-08T17:57:26.239Z - debug: 1 users registered
+2019-07-08T17:57:26.424Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:57:36.789Z - info: Environment isProduction =  true
+2019-07-08T17:57:36.814Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:57:36 GMT-0400 (Eastern Daylight Time), pid=73506, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=56836096, heapTotal=40132608, heapUsed=22651120, external=19585146, loadavg=[1.248046875, 1.45751953125, 1.7314453125], uptime=3541567
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:57:37.065Z - info: Starting controllers/user.js.
+2019-07-08T17:57:37.065Z - info: START seeder.
+2019-07-08T17:57:37.069Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:57:37.075Z - debug: 10 estimates seeded
+2019-07-08T17:57:37.075Z - debug: 1 users registered
+2019-07-08T17:57:37.262Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:57:38.999Z - info: Environment isProduction =  true
+2019-07-08T17:57:39.022Z - error: uncaughtException: expressValidator is not a function date=Mon Jul 08 2019 13:57:39 GMT-0400 (Eastern Daylight Time), pid=73516, uid=501, gid=20, cwd=/Users/santosh/Desktop/CoatingsEstimator, execPath=/usr/local/bin/node, version=v10.16.0, argv=[/usr/local/bin/node, /Users/santosh/Desktop/CoatingsEstimator/app.js], rss=63655936, heapTotal=39608320, heapUsed=20318696, external=18352943, loadavg=[1.30810546875, 1.46630859375, 1.73291015625], uptime=3541570
+TypeError: expressValidator is not a function
+    at Object.<anonymous> (/Users/santosh/Desktop/CoatingsEstimator/app.js:109:9)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:829:12)
+    at startup (internal/bootstrap/node.js:283:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)
+2019-07-08T17:57:39.277Z - info: Starting controllers/user.js.
+2019-07-08T17:57:39.277Z - info: START seeder.
+2019-07-08T17:57:39.283Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:57:39.290Z - debug: 10 estimates seeded
+2019-07-08T17:57:39.290Z - debug: 1 users registered
+2019-07-08T17:57:39.476Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:57:55.814Z - info: Environment isProduction =  true
+2019-07-08T17:57:55.958Z - debug: START routing
+2019-07-08T17:57:55.968Z - debug: END routing
+2019-07-08T17:57:55.999Z - info: Starting controllers/user.js.
+2019-07-08T17:57:56.000Z - debug: START user routing
+2019-07-08T17:57:56.001Z - debug: END user routing
+2019-07-08T17:57:56.001Z - info: Loaded routing.
+2019-07-08T17:57:56.230Z - info: START seeder.
+2019-07-08T17:57:56.236Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:57:56.243Z - debug: 10 estimates seeded
+2019-07-08T17:57:56.243Z - debug: 1 users registered
+2019-07-08T17:57:56.419Z - debug: User already exists:  cgeadmin@mail.com
+2019-07-08T17:57:59.856Z - debug: GET /
+2019-07-08T17:57:59.888Z - debug: Request to /
+2019-07-08T17:58:05.958Z - debug: GET /login
+2019-07-08T17:58:05.962Z - debug: GET /favicon.ico
+2019-07-08T17:58:08.373Z - debug: POST /login
+2019-07-08T17:58:08.488Z - error: 
+2019-07-08T17:58:08.503Z - debug: GET /
+2019-07-08T17:58:08.547Z - debug: Request to /
+2019-07-08T17:58:12.484Z - debug: GET /logout
+2019-07-08T17:58:12.542Z - debug: GET /login
+2019-07-08T17:58:59.559Z - info: Environment isProduction =  true
+2019-07-08T17:58:59.760Z - debug: START routing
+2019-07-08T17:58:59.771Z - debug: END routing
+2019-07-08T17:58:59.821Z - info: Starting controllers/user.js.
+2019-07-08T17:58:59.821Z - debug: START user routing
+2019-07-08T17:58:59.822Z - debug: END user routing
+2019-07-08T17:58:59.822Z - info: Loaded routing.
+2019-07-08T17:59:00.118Z - info: START seeder.
+2019-07-08T17:59:00.123Z - debug: Registering cgeadmin@mail.com
+2019-07-08T17:59:00.130Z - debug: 10 estimates seeded
+2019-07-08T17:59:00.130Z - debug: 1 users registered
+2019-07-08T17:59:00.540Z - debug: User already exists:  cgeadmin@mail.com

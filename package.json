@@ -27,7 +27,7 @@
     "express-flash": "^0.0.2",
     "express-session": "^1.15.6",
     "express-status-monitor": "^1.0.1",
-    "express-validator": "latest",
+    "express-validator": "5.3.1",
     "lodash": "latest",
     "lodash.find": "^4.6.0",
     "lodash.findindex": "^4.6.0",
